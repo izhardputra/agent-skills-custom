@@ -17,9 +17,9 @@ Two tracks: **code** (git repos) and **documents** (KAK/TOR, letters, decks). De
 
 ## Who does what
 
-- **Brain**: Claude Opus for alignment, light work, and final review. **GPT-6 Astra** runs heavy executions in its own T3 thread, so ChatGPT quota is spent first.
+- **Brain**: Claude Opus for alignment, light work, and final review. **GPT-6 Astra in the Codex harness** runs heavy executions in its own T3 thread, so ChatGPT quota is spent first.
 - **Hands**: Pi with GPT-6.1 Sol, one T3 child per ticket, each in its own worktree.
-- **Reviewer**: always a different model family from the builder. Codex reviews Claude/GPT-Sol work; Claude reviews Astra's.
+- **Reviewer**: always a different model family from the builder. Codex reviews Claude's work; Claude reviews GPT's (Astra or Sol), per milestone and at the end.
 - **DeepSeek** (paid API) and **Gemini** (tiny quota) are fallbacks only.
 
 Exact targets: `config/models.md`. Shared rules: `rules/AGENTS.md`.
