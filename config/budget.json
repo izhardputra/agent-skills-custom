@@ -1,0 +1,10 @@
+{
+  "_note": "Set on 2026-11-03 at measured size + ~20% headroom. Raise a limit only in a reviewed PR that says what it buys.",
+  "rules_max_lines": 50,
+  "rules_max_tokens": 850,
+  "auto_skills_max": 18,
+  "auto_desc_tokens_max": 1300,
+  "skill_desc_tokens_max": 180,
+  "skill_lines_max": 350,
+  "always_loaded_tokens_max": 2100
+}

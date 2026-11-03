@@ -1,0 +1,38 @@
+{
+  "mattpocock-skills": {
+    "repo": "https://github.com/mattpocock/skills",
+    "ref": "main",
+    "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+    "date": "2026-10-31",
+    "release": "v1.3.2",
+    "license": "MIT",
+    "skills_root": "skills"
+  },
+  "addyosmani-agent-skills": {
+    "repo": "https://github.com/addyosmani/agent-skills",
+    "ref": "main",
+    "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+    "date": "2026-11-01",
+    "release": "v0.6.15",
+    "license": "MIT",
+    "skills_root": "skills"
+  },
+  "obra-superpowers": {
+    "repo": "https://github.com/obra/superpowers",
+    "ref": "main",
+    "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+    "date": "2026-10-21",
+    "release": "v7.0.1",
+    "license": "MIT",
+    "skills_root": "skills"
+  },
+  "pstack": {
+    "repo": "https://github.com/cursor/plugins",
+    "ref": "main",
+    "commit": "ae5650febf4320793844c12c4adaa937f417f8da",
+    "date": "2026-10-31",
+    "release": "pstack 0.15.36",
+    "license": "MIT",
+    "skills_root": "pstack/skills"
+  }
+}
