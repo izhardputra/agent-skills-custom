@@ -13,8 +13,8 @@ Target format: `providerInstanceId · model · options`.
 | Daily L0–L1 | `claudeAgent · claude-opus-5-5 · effort medium` | `claudeAgent · claude-sonnet-5-5` |
 | Hands: tickets | `pi · openai/gpt-6.1-sol · thinking medium` | `pi · openai/gpt-6-astra` for hard or once-failed tickets; `pi · deepseek/deepseek-flash · thinking low` only if GPT quota is out |
 | Hands: mechanical edits | `pi · openai/gpt-6.1-sol · thinking low` | n/a |
-| Reviewer: code (L2) | Codex CLI `codex review` (config default `gpt-6-astra`) | `pi · openai/gpt-6.1-sol · thinking high`, role review |
-| Reviewer: adversarial (L3) | Codex CLI `codex review -c model_reasoning_effort="high"` + challenge prompt | `antigravity · gemini-4-argon-high` (opt-in, L3-critical only) |
+| Reviewer: code (L2) | Codex CLI `codex review "<diff + spec + focus>"` (config default `gpt-6-astra`; spec in the prompt is required) | `pi · openai/gpt-6.1-sol · thinking high`, role review |
+| Reviewer: adversarial (L3) | Codex CLI `codex review -c model_reasoning_effort="high" "<diff + spec + challenge>"` | `antigravity · gemini-4-argon-high` (opt-in, L3-critical only) |
 | Reviewer when GPT built it | `claudeAgent · claude-opus-5-5` (`code-review`) | n/a |
 | Document second reader | `pi · openai/gpt-6.1-sol · thinking high` | `claudeAgent · claude-opus-5-5` if GPT wrote it |
 | Research (rare) | `pi · openai/gpt-6.1-sol · thinking medium` | `antigravity · gemini-3.8-flash-medium` |

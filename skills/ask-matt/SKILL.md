@@ -51,7 +51,7 @@ Bugs that resist a first look: `diagnosing-bugs`, then `retro`. A design questio
 
 ## 5. Review pairing (builder ≠ reviewer family)
 
-- Claude or Pi-GPT built the code → **Codex** reviews: `codex review --base <branch>` (or `--uncommitted`), with a short focus prompt from the spec. At L3 add an adversarial pass: `codex review --base <branch> -c model_reasoning_effort="high" "Challenge the design: hidden assumptions, failure modes, rollback, security. Report only issues that would make it fail the spec."`
+- Claude or Pi-GPT built the code → **Codex** reviews. Always pass the spec in the prompt (without it Codex treats odd behaviour as intended); a prompt cannot be combined with `--base`/`--uncommitted`, so name the diff in the prompt: `codex review "Review the changes in git diff <base>...HEAD. Spec: <path + the key requirements>. Report only issues that would make this fail the spec, with file:line."` At L3 add an adversarial pass with `-c model_reasoning_effort="high"` and "Challenge the design: hidden assumptions, failure modes, rollback, security."
 - GPT-6 Astra was the brain or built it → **Claude** reviews (`code-review`, run here).
 - Documents → second reader on Pi · GPT-6.1 Sol (or Claude if GPT wrote it).
 - A finding counts only if you can point to the line and reproduce or quote it. Process findings with `receiving-code-review`.
