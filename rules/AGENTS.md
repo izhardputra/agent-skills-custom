@@ -4,12 +4,12 @@ Source of truth: `~/.claude/workflow/rules/AGENTS.md` (symlinked into each harne
 
 ## Ask before acting
 - A question or a plan from the user is not a go-ahead. Answer or propose; install, change config, delete, send, or publish only after an explicit go-ahead.
-- Do not install tools, databases, or runtimes globally or into ~/.local without asking first.
+- Do not install tools, databases, or runtimes anywhere (globally, ~/.local, or inside the project) without asking first.
 
 ## Working files
 - Inside a project folder, put ALL working files (drafts, specs, logs, helper scripts, renders, downloads, review notes) in `<project root>/.work/<topic>/`. In a git repo, make sure `.work/` is in `.gitignore`.
 - Projects under `~/Library/CloudStorage/` (Google Drive, synced to colleagues): working files go to `~/Documents/0-Setup & Scratch/<project name>/` instead. Only final deliverables go into the Drive folder.
-- No project (T3 scratch thread): use the thread's own folder.
+- No project (T3 scratch thread): if the user names a folder, edit and save results there and keep working files (scripts, logs, renders) in the thread's scratch folder; otherwise use the scratch folder.
 - `.scratch/` is fine when the repo's local issue tracker uses it.
 - Do not use /tmp, ~/.t3/scratch (for project work), or ~/.local. If /tmp is unavoidable, state the exact path in your final reply.
 - Final deliverables (documents, decks, PDFs) go in the relevant project folder, not in `.work/`.
